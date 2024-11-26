@@ -1,4 +1,8 @@
 .titulo{
     text-align: center;
-    
+    section {
+        background-image: url("assets/comida2.jpg");
+           }
+
+           
  }
