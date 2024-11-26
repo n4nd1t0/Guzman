@@ -1,8 +1,38 @@
-.titulo{
-    text-align: center;
-    section {
-        background-image: url("assets/comida2.jpg");
-           }
+/* style.css */
 
-           
- }
+/* Estilo para el texto "Ingresar" en la esquina superior derecha */
+.texto-ingresar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+  }
+  
+  /* Estilo para el título de la tienda */
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  
+  /* Estilo para el mensaje de bienvenida */
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  
+  
+  /* Establecer el tamaño de las imágenes del carrusel */
+.carousel-inner img {
+    width: 600px; /* Establecer un ancho relativo al contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    margin: 0 auto; /* Centrar las imágenes dentro del carrusel */
+  }
+  
+  /* Asegúrate de que el contenedor tenga suficiente espacio */
+  .container {
+    position: relative;
+  }
+  
+  
