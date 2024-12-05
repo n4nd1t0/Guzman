@@ -10,51 +10,89 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    
+    <title>Tienda Guzman</title>
   </head>
-  <body>
-    <!-- Contenedor principal con posición relativa -->
-    <div class="container position-relative">
-      
-      <!-- Título de la tienda centrado -->
-      <h1 class="text-center">TIENDA GUZMAN 😆</h1>
-
-      <!-- Enlace "Ingresar" alineado a la esquina superior derecha -->
-      <div class="texto-ingresar position-absolute top-0 end-0 p-3">
-        <a href="https://www.youtube.com/" class="btn btn-link">Ingresar</a>
-      </div>
-
-      <!-- Mensaje de bienvenida debajo del título -->
-      <h3 class="text-center mt-4" style="font-size: 1.1rem;">
-        ¡Bienvenido a Tienda Guzman!<br>
-        Estamos encantados de que hayas llegado. Aquí encontrarás una amplia selección de productos pensados especialmente para ti, con la mejor calidad y los precios más competitivos. Navega por nuestras categorías y descubre todo lo que tenemos para ofrecerte.<br>
-        ¿Necesitas ayuda? No dudes en ponerte en contacto con nuestro equipo de atención al cliente. ¡Estamos aquí para ayudarte!
-      </h3>
-
-      <!-- Carrusel de imágenes sin flechas, con intervalo de 2 segundos -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-inner">
-          <!-- Primer elemento del carrusel -->
-          <div class="carousel-item active">
-            <img src="assets/comida2.jpg" class="d-block w-100" alt="Producto 1">
-          </div>
-          <!-- Segundo elemento del carrusel -->
-          <div class="carousel-item">
-            <img src="assets/comida4.jpg" class="d-block w-100" alt="Producto 2">
-          </div>
-          <!-- Tercer elemento del carrusel -->
-          <div class="carousel-item">
-            <img src="assets/comida5.jpg" class="d-block w-100" alt="Producto 3">
-          </div>
-          <!-- Cuarto elemento del carrusel -->
-          <div class="carousel-item">
-            <img src="assets/comida9.jpg" class="d-block w-100" alt="Producto 4">
+  <header> 
+    
+      <div class="container position-relative">
+        
+        <!-- Titulo de la tienda centrado -->
+        <h1 class="text-center">TIENDA GUZMAN</h1>
+  
+        <!-- Mensaje de bienvenida debajo del titulo -->
+        <h3 class="text-center mt-4" style="font-size: 1.1rem;">
+          ¡Bienvenido a Tienda Guzman!<br>
+          Aquí encontrarás una amplia selección de productos pensados especialmente para ti.<br>
+          ¿Necesitas ayuda? No dudes en ponerte en contacto con nuestro equipo de atención al cliente. ¡Estamos aquí para ayudarte!
+        </h3>
+  
+        <!-- Carrusel de imágenes sin flechas -->
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-item">
+              <img src="assets/comida1.jpg" alt="Producto 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/comida2.jpg" alt="Producto 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/comida3.jpg" alt="Producto 3">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/comida4.jpg" alt="Producto 4">
+            </div>
           </div>
         </div>
-      </div>
-
-    </div> <!-- Fin del contenedor principal -->
+  
+        <!-- Variedades de comida -->
+        <div class="variedades-container">
+          <h2 class="text-center">Variedades de Comida</h2>
+  
+          <!-- Contenedor de variedades -->
+          <div class="variedades">
+            <div class="variedad">
+              <img src="assets/comida1.jpg" alt="Variedad 1">
+              <div class="info">Hamburguesas</div>
+              <!-- Botón debajo de la imagen de hamburguesa -->
+              <div class="button-container">
+                <a href="hamburguesas.html" class="btn btn-primary">Ver más Hamburguesas</a>
+              </div>
+            </div>
+            <div class="variedad">
+              <img src="assets/comida2.jpg" alt="Variedad 2">
+              <div class="info">Completos</div>
+              <!-- Botón debajo de la imagen de completo -->
+              <div class="button-container">
+                <a href="completos.html" class="btn btn-primary">Ver más Completos</a>
+                
+              </div>
+            </div>
+            <div class="variedad">
+              <img src="assets/comida3.jpg" alt="Variedad 3">
+              <div class="info">Papas fritas con shucrut</div>
+              <!-- Botón debajo de la imagen de Papas fritas -->
+              <div class="button-container">
+                <a href="papasfritas.html" class="btn btn-primary">Ver más Papas Fritas</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Flechas de navegación para las variedades -->
+          <div class="nav-arrow left-arrow">&#10094;</div>
+          <div class="nav-arrow right-arrow">&#10095;</div>
+        </div>
+      </div> <!-- Fin del contenedor principal -->
+  
+      <!-- Bootstrap JS y Popper.js -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     
-    <!-- Bootstrap JS y Popper.js (Requerido para el funcionamiento del carrusel) -->
+  </header>
+  <body>
+    <h1>Completo</h1>
+    <!-- Bootstrap JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   </body>
