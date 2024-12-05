@@ -1,16 +1,14 @@
-/* Asegura que las imágenes sean del mismo tamaño */
-.carousel-container .carousel-item img,
-.variedades img {
+/* Asegura que todas las imágenes tengan el mismo tamaño */
+.variedad img {
   width: 100%;
-  height: 300px; /* Ajusta la altura para que las imágenes tengan el mismo tamaño */
-  object-fit: cover; /* Asegura que las imágenes se ajusten bien sin deformarse */
-  transition: transform 0.3s ease; /* Añade transición para el efecto zoom */
+  height: 250px; /* Ajusta la altura para que todas las imágenes sean del mismo tamaño */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  transition: transform 0.3s ease; /* Efecto de transición al pasar el cursor */
 }
 
-/* Animación de zoom al pasar el cursor sobre las imágenes */
-.carousel-container .carousel-item img:hover,
-.variedades img:hover {
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+/* Efecto de zoom al pasar el cursor sobre las imágenes */
+.variedad img:hover {
+  transform: scale(1.05);
 }
 
 /* Estilos generales para las variedades */
@@ -79,4 +77,37 @@
 
 .nav-arrow:hover {
   color: #ff6347;
+}
+
+/* Reseteo de márgenes y padding global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  display: flex;           /* Usamos Flexbox */
+  flex-direction: column;  /* Apilamos los elementos de arriba a abajo */
+  min-height: 100vh;       /* El body ocupa toda la altura de la pantalla */
+}
+
+/* Contenedor principal de la página, que contiene todo el contenido */
+.container {
+  flex-grow: 1;      /* Hace que el contenido ocupe todo el espacio disponible */
+  padding-bottom: 60px; /* Espacio para que el footer no se solape */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;  /* Asegura que el footer ocupe todo el ancho */
+  position: relative;
+  bottom: 0;
 }
